@@ -12,15 +12,15 @@ html, body {
 body {
     font-family: 'Century Gothic';
     line-height: 1.5;
-    background-color: #0f172a;
-    color: #e8e9eb;
+    background-color: #eeeeee;
+    color: #333333;
     display: flex;
     flex-direction: column;
     padding-top: 60px;
 }
 
 header {
-    background:  #0f172a;
+    background:  #1b263b;
     color:  #ccd1db;
     padding: 1rem 2rem;
     display: flex;
@@ -70,7 +70,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #1b263b;
+    background-color: #eeeeee;
     padding: 2rem;
     border-radius: 8px;
 }
@@ -89,9 +89,9 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 2rem;
-    background-color: #1b263b;
+    background-color: #eeeeee;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -103,24 +103,25 @@ ul {
 }
 
 a {
-    color:  #3498db; /* Dark grey for links */
+    color:  #00009f; /* Dark grey for links */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ffffff; /* Slightly darker grey on hover */
+    color: #111111; /* Slightly darker grey on hover */
 
 }
 
 footer {
-    background:  #0f172a;
-    color:  #ccd1db;
+    background:  #eeeeee;
+    color:  #333333;
     text-align: center;
     padding: 1rem 0;
     width: 100%;
     position: relative;
     bottom: 0;
+    border-top: 1px solid #dddddd
 }
 
 @media (min-width: 768px) {
@@ -144,7 +145,7 @@ p {
 }
 
 .contact {
-    background-color:  #1b263b;; /* White background for contrast */
+    background-color:  #eeeeee;; /* White background for contrast */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -165,6 +166,6 @@ p {
 
 .contact i, .contact .orcid-logo {
     margin-right: 8px; /* Space between icon/logo and text */
-    color: #acacac; /* Dark grey for icons */
+    color: #555555; /* Dark grey for icons */
 }
 
