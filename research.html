@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Ibtsaam Qadir</title>
+    <title>Muhammad Ibtsaam Qadir - Research</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,46 +14,112 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-		        <li><a href="research.html">Research</a></li>
+                <li><a href="research.html" class="active">Research</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Research</h2>
-        <section class="research">
-            <h2>Artificial Intelligence for Medicine</h2>
-            <h3>Prediction of Disease Trajectories in Pancreatic Diseases</h3>
-	    <p> </p>	
-            <p>This project involves utilizing deep learning methodologies to analyze medical imaging and multimodal 
-                clinical data for predicting disease trajectories in patients with pancreatic diseases. By applying 
-                deep learning algorithms, the project aims to enhance the accuracy of diagnostic and prognostic models, 
-                contributing to improved patient outcomes and personalized management.
-            </p>
+        <h2 class="page-title">Research Projects</h2>
+        
+        <section class="project-card">
+            <div class="project-content">
+                <div class="project-details">
+                    <h3 class="project-domain">Artificial Intelligence for Medicine</h3>
+                    <h4 class="project-title">Prediction of Disease Trajectories in Pancreatic Diseases</h4>
+                    <p class="project-description">
+                        This project involves utilizing deep learning methodologies to analyze medical imaging 
+                        and multimodal clinical data for predicting disease trajectories in patients with pancreatic 
+                        diseases. By applying deep learning algorithms, the project aims to enhance the accuracy 
+                        of diagnostic and prognostic models, contributing to improved patient outcomes and 
+                        personalized management.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://doi.org/10.1101/2025.01.08.25320130" target="_blank" class="btn">
+                            <i class="fas fa-file-pdf"></i>Systematic Review: AI in IPMN
+                        </a>
+                    </div>
+            </div>
+            <div class="project-visual">
+                <img src="Images/IPMN_SystematicReview.jpg" alt="AI in IPMN Imaging" 
+                     class="research-visualization">
+                <p class="visual-caption">Landscape of Artificial Intelligence in IPMN Imaging</p>
+            </div>
         </section>
-        <section class="research">
-            <h2>Machine Learning for Environmental Monitoring</h2>
-            <h3>Water Quality Monitoring</h3>
-	    <p> </p>
-            <p> Designed a small unmanned surface vehicle (USV) capable of measuring physicochemical parameters of water 
-                along with GPS coordinates to monitor water quality in real-time. The data collected by the USV is wirelessly 
-                transmitted to a web portal, where it is visualized through trendlines, data tables, and a color-coded heatmap. 
-                A neural network is trained, using oversampling techniques to augment the training data, to classify water 
-                quality into five categories. The system enables effective real-time monitoring of water quality in small to 
-                medium-sized water bodies, helping to protect water sources and human health. 
-                <a href="https://doi.org/10.2166/ws.2024.141" target="_blank">Paper&nbsp;</a> | 
-                <a href="https://researchblog.nust.edu.pk/aqua-drone-the-aquatic-avenger-with-a-vision-for-blue-and-healthy-planet/" 
-                target="_blank">&nbsp;Blog</a>
-            </p>
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <img src="Images/aqua-drone-animation.gif" alt="aqua-drone gif" style="width: 35%;">
-                <!-- img src="Images/aquadrone-methodology.png" alt="methodology" style="width: 40%;"-->
+
+        <section class= "project-card">
+
+            <div class="project-content">
+                <div class="project-details">
+                    <h3 class="project-domain">Artificial Intelligence for Medicine</h3>
+                    <h4 class="project-title">Machine Learning-Based Post-PCI Risk Prediction</h4>
+                    <p class="project-description">
+                        Percutaneous coronary intervention (PCI) is one of the most frequently performed cardiovascular interventions,
+                         yet post-procedural complications affect up to 10% of patients. Traditional risk 
+                         assessment tools like the SYNTAX, GRACE, CathPCI bleeding, or NCDR AKI risk calculators have long guided 
+                         clinicians in predicting procedural risks. AI-enabled approaches to risk assessment 
+                         can transform these fixed statistical estimates into adaptive predictive strategies.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://doi.org/10.1093/ehjdh/ztaf001" target="_blank" class="btn">
+                            <i class="fas fa-file-pdf"></i> Letter to the Editor
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="project-visual">
+                    <img src="Images/PCI_Letter.jpeg" alt="ML in post pci risk stratification" 
+                         class="research-visualization">
+                    <p class="visual-caption">Machine learning–based percutaneous coronary intervention risk prediction</p>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="project-card">
+            <div class="project-content">
+                <div class="project-details">
+                    <h3 class="project-domain">Machine Learning for Environmental Monitoring</h3>
+                    <h4 class="project-title">Intelligent Water Quality Assessment System</h4>
+                    <p class="project-description">
+                        Designed a small unmanned surface vehicle (USV) capable of measuring physicochemical 
+                        parameters of water along with GPS coordinates to monitor water quality in real-time. 
+                        The system features wireless data transmission to a web portal with interactive 
+                        visualizations and a neural network-based classification system using oversampling 
+                        techniques for water quality categorization.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://doi.org/10.2166/ws.2024.141" target="_blank" class="btn">
+                            <i class="fas fa-file-pdf"></i> Research Paper
+                        </a>
+                        <a href="https://researchblog.nust.edu.pk/aqua-drone-the-aquatic-avenger-with-a-vision-for-blue-and-healthy-planet/" 
+                           target="_blank" class="btn">
+                            <i class="fas fa-blog"></i> Project Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <img src="Images/aqua-drone-animation.gif" alt="Aqua-drone operational animation" 
+                         class="research-visualization">
+                    <p class="visual-caption">Real-time water quality monitoring system operation</p>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <h5>&copy; 2025 Muhammad Ibtsaam Qadir</h5>
     </footer>
+    
+    <script>
+        // Update copyright year automatically
+        document.querySelector('footer h5').innerHTML = 
+            `&copy; ${new Date().getFullYear()} Muhammad Ibtsaam Qadir`;
+    </script>
 </body>
 </html>
