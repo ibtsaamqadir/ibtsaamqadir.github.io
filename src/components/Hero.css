@@ -417,17 +417,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff !important;
+  color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
   animation: bounce 2s infinite;
   font-size: 1.2rem;
-}
-
-.scroll-btn * {
-  color: #ffffff !important;
-  fill: #ffffff !important;
-  stroke: #ffffff !important;
+  outline: none;
 }
 
 .scroll-btn svg {
@@ -435,11 +430,20 @@
   fill: #ffffff !important;
   stroke: #ffffff !important;
   stroke-width: 2;
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 .scroll-btn svg path {
   fill: #ffffff !important;
   stroke: #ffffff !important;
+}
+
+.scroll-btn svg * {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .scroll-btn:hover {

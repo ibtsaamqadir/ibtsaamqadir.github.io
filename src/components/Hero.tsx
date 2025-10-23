@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaChevronDown } from 'react-icons/fa';
 import profileImage from '../assets/images/profile.jpeg';
 import './Hero.css';
 
@@ -136,7 +135,7 @@ const Hero: React.FC = () => {
           onClick={scrollDown}
           aria-label="Scroll down"
         >
-          <FaChevronDown />
+          ↓
         </button>
       </motion.div>
     </section>
