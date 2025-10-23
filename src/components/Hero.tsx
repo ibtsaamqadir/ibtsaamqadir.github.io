@@ -1,10 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaChevronDown } from 'react-icons/fa';
 import profileImage from '../assets/images/profile.jpeg';
 import './Hero.css';
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollDown = () => {
     const element = document.getElementById('about');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -117,6 +125,20 @@ const Hero: React.FC = () => {
         </motion.div>
       </div>
 
+      <motion.div
+        className="scroll-indicator"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
+      >
+        <button
+          className="scroll-btn"
+          onClick={scrollDown}
+          aria-label="Scroll down"
+        >
+          <FaChevronDown />
+        </button>
+      </motion.div>
     </section>
   );
 };
