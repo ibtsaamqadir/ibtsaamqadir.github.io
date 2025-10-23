@@ -144,9 +144,6 @@ const Publications: React.FC = () => {
               ))}
             </select>
           </div>
-          <div className="publication-count">
-            {filteredResearchArticles.length + filteredReviewArticles.length + filteredConferenceAbstracts.length} publication{(filteredResearchArticles.length + filteredReviewArticles.length + filteredConferenceAbstracts.length) !== 1 ? 's' : ''}
-          </div>
         </motion.div>
 
         {/* Research Articles Section */}
