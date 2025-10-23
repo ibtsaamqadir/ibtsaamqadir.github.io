@@ -44,6 +44,37 @@
   line-height: 1.6;
 }
 
+.google-scholar-link {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.google-scholar-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #1877f2, #1877f2);
+  transition: width 0.3s ease;
+}
+
+.google-scholar-link:hover {
+  color: #1877f2;
+  background: rgba(24, 119, 242, 0.08);
+  text-decoration: none;
+}
+
+.google-scholar-link:hover::before {
+  width: 100%;
+}
+
 .research-articles-heading {
   font-size: 1.5rem;
   font-weight: 700;

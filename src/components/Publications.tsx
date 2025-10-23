@@ -110,7 +110,15 @@ const Publications: React.FC = () => {
         >
           <h2 className="section-title">Publications</h2>
           <p className="section-subtitle">
-          Full publication list available on Google Scholar
+          Full publication list available on{' '}
+          <a 
+            href="https://scholar.google.com/citations?user=pv1eYiAAAAAJ&hl=en" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="google-scholar-link"
+          >
+            Google Scholar
+          </a>
           </p>
         </motion.div>
 
