@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub, FaUniversity, FaMapMarkerAlt, FaPhone, FaPaperPlane, FaIdCard } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaUniversity, FaPaperPlane, FaIdCard } from 'react-icons/fa';
 import './Contact.css';
 
 interface ContactInfo {

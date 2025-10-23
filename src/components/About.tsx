@@ -1,51 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaUniversity, FaAward, FaLanguage, FaBriefcase } from 'react-icons/fa';
+import { FaGraduationCap, FaUniversity, FaAward, FaBriefcase } from 'react-icons/fa';
 import './About.css';
 
-interface Skill {
-  category: string;
-  skills: string[];
-}
-
 const About: React.FC = () => {
-  const skills: Skill[] = [
-    {
-      category: 'Programming Languages',
-      skills: ['Python', 'R', 'MATLAB', 'JavaScript', 'SQL', 'C++']
-    },
-    {
-      category: 'Research Tools',
-      skills: ['Jupyter', 'LaTeX', 'SPSS', 'RStudio', 'Git', 'Docker']
-    },
-    {
-      category: 'Data Analysis',
-      skills: ['Machine Learning', 'Statistical Analysis', 'Data Visualization', 'Pandas', 'NumPy', 'TensorFlow']
-    },
-    {
-      category: 'Languages',
-      skills: ['English (Fluent)', 'Arabic (Native)', 'French (Intermediate)']
-    }
-  ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 }
-    }
-  };
 
   return (
     <section id="about" className="about">

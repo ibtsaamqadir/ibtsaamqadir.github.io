@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaMicroscope, FaBrain, FaLayerGroup, FaXRay, FaClock, FaCheckCircle, FaFileAlt, FaExternalLinkAlt, FaBlog } from 'react-icons/fa';
+import { FaMicroscope, FaBrain, FaXRay, FaClock, FaCheckCircle, FaFileAlt, FaExternalLinkAlt, FaBlog } from 'react-icons/fa';
 import researchProject1Image from '../assets/images/researchproject1.jpg';
 import researchProject2Image from '../assets/images/researchproject2.png';
 import aquaDroneAnimation from '../assets/images/aqua-drone-animation.gif';
@@ -64,7 +64,7 @@ const Research: React.FC = () => {
     }
   ];
 
-  const getStatusIcon = (status: string) => {
+  const getStatusIcon = (status?: string) => {
     switch (status) {
       case 'completed':
         return <FaCheckCircle className="status-icon completed" />;
@@ -77,7 +77,7 @@ const Research: React.FC = () => {
     }
   };
 
-  const getStatusText = (status: string) => {
+  const getStatusText = (status?: string) => {
     switch (status) {
       case 'completed':
         return 'Completed';
@@ -86,7 +86,7 @@ const Research: React.FC = () => {
       case 'planned':
         return 'Planned';
       default:
-        return status;
+        return status ?? 'N/A';
     }
   };
 
@@ -189,8 +189,8 @@ const Research: React.FC = () => {
                       {project.startDate && (
                         <div className="project-timeline">
                           <span className="timeline-text">
-                            {project.status === 'completed' 
-                              ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate!).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
+                            {project.status === 'completed' && project.endDate
+                              ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
                               : `Started ${new Date(project.startDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`
                             }
                           </span>
@@ -235,8 +235,8 @@ const Research: React.FC = () => {
                       {project.startDate && (
                         <div className="project-timeline">
                           <span className="timeline-text">
-                            {project.status === 'completed' 
-                              ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate!).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
+                            {project.status === 'completed' && project.endDate
+                              ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
                               : `Started ${new Date(project.startDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`
                             }
                           </span>
@@ -286,8 +286,8 @@ const Research: React.FC = () => {
                       {project.startDate && (
                         <div className="project-timeline">
                           <span className="timeline-text">
-                            {project.status === 'completed' 
-                              ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate!).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
+                            {project.status === 'completed' && project.endDate
+                              ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
                               : `Started ${new Date(project.startDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`
                             }
                           </span>
@@ -326,14 +326,18 @@ const Research: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="project-timeline">
-                      <span className="timeline-text">
-                        {project.status === 'completed' 
-                          ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate!).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
-                          : `Started ${new Date(project.startDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`
-                        }
-                      </span>
-                    </div>
+                    {(project.startDate || project.endDate) && (
+                      <div className="project-timeline">
+                        <span className="timeline-text">
+                          {project.status === 'completed' && project.startDate && project.endDate
+                            ? `${new Date(project.startDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${new Date(project.endDate).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
+                            : project.startDate
+                              ? `Started ${new Date(project.startDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`
+                              : ''
+                          }
+                        </span>
+                      </div>
+                    )}
                   </>
                 )}
               </motion.div>
