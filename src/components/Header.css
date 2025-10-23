@@ -68,8 +68,8 @@
 }
 
 .nav-link {
-  background: none;
-  border: none;
+  background: none !important;
+  border: none !important;
   color: #1a1a1a;
   font-size: 1rem;
   font-weight: 500;
@@ -77,8 +77,22 @@
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.3s ease;
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.nav-link:focus,
+.nav-link:active,
+.nav-link:focus-visible {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
 }
 
 .nav-link:hover {
