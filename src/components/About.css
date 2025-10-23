@@ -771,6 +771,20 @@
     text-align: left;
   }
 
+  /* Fix experience date pill overlap on mobile (<=768px) */
+  .experience-item p:last-child {
+    position: static;
+    top: auto;
+    right: auto;
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    background: rgba(24, 119, 242, 0.1);
+    border: 1px solid rgba(24, 119, 242, 0.2);
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+  }
+
   .education-item:hover,
   .award-item:hover,
   .experience-item:hover {
@@ -849,6 +863,15 @@
     text-align: left;
     gap: 0.5rem;
     align-items: flex-start;
+  }
+
+  /* Ensure experience date pill stacks below title on very small screens */
+  .experience-item p:last-child {
+    position: static;
+    margin-top: 0.5rem;
+    align-self: flex-start;
+    padding: 0.35rem 0.65rem;
+    font-size: 0.8rem;
   }
 
   .education-date,
