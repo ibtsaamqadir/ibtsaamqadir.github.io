@@ -771,6 +771,11 @@
     text-align: left;
   }
 
+  .experience-item {
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
   /* Fix experience date pill overlap on mobile (<=768px) */
   .experience-item p:last-child {
     position: static;
