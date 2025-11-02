@@ -180,7 +180,6 @@ const Publications: React.FC = () => {
                   </div>
                   <h3 className="publication-title">{publication.title}</h3>
                   <div className="publication-authors">
-                    <FaUsers className="authors-icon" />
                     <span>
                       {publication.authors.map((author, index) => (
                         <React.Fragment key={index}>
@@ -212,7 +211,6 @@ const Publications: React.FC = () => {
 
               {publication.doi && (
                 <div className="publication-doi">
-                  <FaFileAlt className="doi-icon" />
                   <span>DOI: </span>
                   <a
                     href={`https://doi.org/${publication.doi}`}
