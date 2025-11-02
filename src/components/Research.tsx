@@ -138,7 +138,7 @@ const Research: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Projects
+         
           </motion.h3>
 
           <div className="projects-grid">

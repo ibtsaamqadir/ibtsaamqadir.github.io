@@ -35,7 +35,6 @@ const About: React.FC = () => {
           <div className="education-section">
             <h3>Education</h3>
             <div className="education-item">
-              <FaGraduationCap className="education-icon" />
               <div>
                 <h4>Ph.D., Biomedical Engineering</h4>
                 <p style={{marginTop:'5px'}}>Purdue University, West Lafayette, IN</p>
@@ -43,7 +42,6 @@ const About: React.FC = () => {
               <span className="education-date">2024-Present</span>
             </div>
             <div className="education-item">
-              <FaUniversity className="education-icon" />
               <div>
                 <h4>BS, Electrical Engineering</h4>
                 <p style={{marginTop:'5px'}}>National University of Sciences and Technology (NUST), Islamabad</p>
@@ -62,7 +60,6 @@ const About: React.FC = () => {
         >
           <h3>Work Experience</h3>
           <div className="experience-item">
-            <FaBriefcase className="experience-icon" />
             <div>
               <h4>Graduate Research Assistant</h4>
               <p>TMIC Lab, Weldon School of Biomedical Engineering, Purdue University</p>
@@ -70,7 +67,6 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="experience-item">
-            <FaBriefcase className="experience-icon" />
             <div>
               <h4>Research Assistant</h4>
               <p>NCIL, School of Electrical Engineering and Computer Science, NUST</p>
@@ -78,7 +74,6 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="experience-item">
-            <FaBriefcase className="experience-icon" />
             <div>
               <h4>Technology Intern</h4>
               <p>Synaptic Delver, Singapore</p>
@@ -86,7 +81,6 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className="experience-item">
-            <FaBriefcase className="experience-icon" />
             <div>
               <h4>Undergraduate Teaching Assistant</h4>
               <p>CS-114, School of Electrical Engineering and Computer Science, NUST</p>
@@ -105,7 +99,6 @@ const About: React.FC = () => {
           <h3>Awards & Honors</h3>
           <div className="awards-card">
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>Leslie Botorff Fellowship</h4>
                 <p>Purdue University</p>
@@ -113,7 +106,6 @@ const About: React.FC = () => {
               <span className="award-date">2025</span>
             </div>
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>2nd Best Poster</h4>
                 <p>IUSCCC Cancer Research Day</p>
@@ -121,7 +113,6 @@ const About: React.FC = () => {
               <span className="award-date">2025</span>
             </div>
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>Prototype Development Grant</h4>
                 <p>Finding Innovation & Creative Solutions (FICS) Competition</p>
@@ -129,7 +120,6 @@ const About: React.FC = () => {
               <span className="award-date">2024</span>
             </div>
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>Winner</h4>
                 <p>COMMPEC 20th Edition</p>
@@ -137,7 +127,6 @@ const About: React.FC = () => {
               <span className="award-date">2023</span>
             </div>
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>2nd Best Adjudged Industry Project</h4>
                 <p>SEECS Open House</p>
@@ -145,7 +134,6 @@ const About: React.FC = () => {
               <span className="award-date">2023</span>
             </div>
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>Merit Scholarship</h4>
                 <p>Fazaia Educational Welfare Scheme, Pakistan</p>
@@ -153,7 +141,6 @@ const About: React.FC = () => {
               <span className="award-date">2019-2023</span>
             </div>
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>High Achiever Award</h4>
                 <p>School of Electrical Engineering and Computer Science, NUST, Pakistan</p>
@@ -161,7 +148,6 @@ const About: React.FC = () => {
               <span className="award-date">2021</span>
             </div>
             <div className="award-item">
-              <FaAward className="award-icon" />
               <div>
                 <h4>Merit Award</h4>
                 <p>Federal Board of Intermediate and Secondary Education, Pakistan</p>
