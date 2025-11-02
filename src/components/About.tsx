@@ -103,69 +103,71 @@ const About: React.FC = () => {
           viewport={{ once: true }}
         >
           <h3>Awards & Honors</h3>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Leslie Botorff Fellowship</h4>
-              <p>Purdue University</p>
+          <div className="awards-card">
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>Leslie Botorff Fellowship</h4>
+                <p>Purdue University</p>
+              </div>
+              <span className="award-date">2025</span>
             </div>
-            <span className="award-date">2025</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>2nd Best Poster</h4>
-              <p>IUSCCC Cancer Research Day</p>
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>2nd Best Poster</h4>
+                <p>IUSCCC Cancer Research Day</p>
+              </div>
+              <span className="award-date">2025</span>
             </div>
-            <span className="award-date">2025</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Prototype Development Grant</h4>
-              <p>Finding Innovation & Creative Solutions (FICS) Competition</p>
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>Prototype Development Grant</h4>
+                <p>Finding Innovation & Creative Solutions (FICS) Competition</p>
+              </div>
+              <span className="award-date">2024</span>
             </div>
-            <span className="award-date">2024</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Winner</h4>
-              <p>COMMPEC 20th Edition</p>
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>Winner</h4>
+                <p>COMMPEC 20th Edition</p>
+              </div>
+              <span className="award-date">2023</span>
             </div>
-            <span className="award-date">2023</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>2nd Best Adjudged Industry Project</h4>
-              <p>SEECS Open House</p>
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>2nd Best Adjudged Industry Project</h4>
+                <p>SEECS Open House</p>
+              </div>
+              <span className="award-date">2023</span>
             </div>
-            <span className="award-date">2023</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Merit Scholarship</h4>
-              <p>Fazaia Educational Welfare Scheme, Pakistan</p>
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>Merit Scholarship</h4>
+                <p>Fazaia Educational Welfare Scheme, Pakistan</p>
+              </div>
+              <span className="award-date">2019-2023</span>
             </div>
-            <span className="award-date">2019-2023</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>High Achiever Award</h4>
-              <p>School of Electrical Engineering and Computer Science, NUST, Pakistan</p>
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>High Achiever Award</h4>
+                <p>School of Electrical Engineering and Computer Science, NUST, Pakistan</p>
+              </div>
+              <span className="award-date">2021</span>
             </div>
-            <span className="award-date">2021</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Merit Award</h4>
-              <p>Federal Board of Intermediate and Secondary Education, Pakistan</p>
+            <div className="award-item">
+              <FaAward className="award-icon" />
+              <div>
+                <h4>Merit Award</h4>
+                <p>Federal Board of Intermediate and Secondary Education, Pakistan</p>
+              </div>
+              <span className="award-date">2017-2019, 2019-2023</span>
             </div>
-            <span className="award-date">2017-2019, 2019-2023</span>
           </div>
         </motion.div>
 
