@@ -294,7 +294,6 @@ const Publications: React.FC = () => {
 
               {publication.doi && (
                 <div className="publication-doi">
-                  <FaFileAlt className="doi-icon" />
                   <span>DOI: </span>
                   <a
                     href={`https://doi.org/${publication.doi}`}
@@ -380,7 +379,6 @@ const Publications: React.FC = () => {
 
               {publication.doi && (
                 <div className="publication-doi">
-                  <FaFileAlt className="doi-icon" />
                   <span>DOI: </span>
                   <a
                     href={`https://doi.org/${publication.doi}`}
