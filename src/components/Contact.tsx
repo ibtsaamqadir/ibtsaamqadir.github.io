@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
       title: 'Email',
       value: contactInfo.email,
       link: `mailto:${contactInfo.email}`,
-      color: '#3b82f6'
+      color: '#1b263b'
     },
     {
       icon: <img src={orcidImage} alt="ORCID" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />,
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Get in Touch</h2>
+          <h2 className="section-title" style={{color : "#415a77 !important"}}>Get in Touch</h2>
           <p className="section-subtitle">
           I am always eager to connect with fellow researchers, professionals, and students. Whether you have a question about my work, a potential collaboration, or just want to discuss ideas in the field of biomedical engineering, medical image analysis, or AI, feel free to reach out.          </p>
         </motion.div>

@@ -34,7 +34,7 @@
 .footer-info h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1877f2;
+  color: #415a77;
   margin: 0 0 0.75rem 0;
   letter-spacing: -0.025em;
 }
@@ -69,7 +69,7 @@
 }
 
 .footer-info .affiliation-link:hover {
-  color: #1877f2;
+  color: #415a77;
   text-decoration: underline;
 }
 
@@ -115,12 +115,12 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: #1877f2;
+  background: #415a77;
   transition: width 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: #1877f2;
+  color: #415a77;
   transform: translateX(3px);
 }
 
@@ -170,7 +170,7 @@
 }
 
 .back-to-top {
-  background: #1877f2;
+  background: #415a77;
   border: none;
   border-radius: 50%;
   width: 44px;
@@ -185,7 +185,7 @@
 }
 
 .back-to-top:hover {
-  background: #166fe5;
+  background: #415a77;
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
 }

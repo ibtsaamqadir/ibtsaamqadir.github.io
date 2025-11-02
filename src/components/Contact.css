@@ -31,7 +31,7 @@
 .section-title {
   font-size: 2.25rem;
   font-weight: 800;
-  color: #1877f2 !important;
+  color: #415a77 !important;
   margin: 0 0 1rem 0;
   letter-spacing: -0.025em;
 }
@@ -96,7 +96,7 @@
 .method-icon {
   font-size: 1.25rem;
   flex-shrink: 0;
-  color: #1877f2;
+  color: #415a77;
 }
 
 .method-content h4 {
@@ -148,46 +148,46 @@
 }
 
 .social-button.linkedin {
-  background: linear-gradient(135deg, #1877f2, #1877f2);
+  background: linear-gradient(135deg, #415a77, #415a77);
   border: none;
   animation: none;
 }
 
 .social-button.linkedin:hover {
-  background: linear-gradient(135deg, #166fe5, #166fe5);
+  background: linear-gradient(135deg, #1a385e, #44566e);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(24, 119, 242, 0.4);
 }
 
 .social-button.github {
   background: #ffffff;
-  border: 2px solid #1877f2;
+  border: 2px solid #415a77;
   animation: none;
-  color: #1877f2;
+  color: #415a77;
 }
 
 .social-button.github:hover {
   background: rgba(24, 119, 242, 0.1);
-  border-color: #1877f2;
+  border-color: #415a77;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(24, 119, 242, 0.3);
 }
 
 .social-button.email {
-  background: linear-gradient(135deg, #1877f2, #166fe5, #1877f2);
+  background: linear-gradient(135deg, #415a77, #166fe5, #415a77);
 }
 
 .social-button.email:hover {
-  background: linear-gradient(135deg, #166fe5, #1877f2, #166fe5);
+  background: linear-gradient(135deg, #131d2a, #415a77, #224169);
   border-color: rgba(24, 119, 242, 0.5);
 }
 
 .social-button.orcid {
-  background: linear-gradient(135deg, #1877f2, #166fe5, #1877f2);
+  background: linear-gradient(135deg, #415a77, #214370, #415a77);
 }
 
 .social-button.orcid:hover {
-  background: linear-gradient(135deg, #166fe5, #1877f2, #166fe5);
+  background: linear-gradient(135deg, #294e7f, #415a77, #0e2138);
   border-color: rgba(24, 119, 242, 0.5);
 }
 
@@ -250,7 +250,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #1877f2;
+  border-color: #415a77;
   box-shadow: 0 0 0 3px rgba(24, 119, 242, 0.1);
 }
 
@@ -266,7 +266,7 @@
 
 .submit-button {
   background: rgba(24, 119, 242, 0.1);
-  color: #1877f2;
+  color: #415a77;
   border: 2px solid rgba(24, 119, 242, 0.3);
   border-radius: 1rem;
   padding: 1rem 2rem;
@@ -283,7 +283,7 @@
 
 .submit-button:hover:not(:disabled) {
   background: rgba(24, 119, 242, 0.2);
-  border-color: #1877f2;
+  border-color: #415a77;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(24, 119, 242, 0.3);
 }
@@ -298,7 +298,7 @@
   width: 16px;
   height: 16px;
   border: 2px solid rgba(24, 119, 242, 0.3);
-  border-top: 2px solid #1877f2;
+  border-top: 2px solid #415a77;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -491,7 +491,7 @@
   }
 
   .social-button.linkedin {
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    background: linear-gradient(135deg, #415a77, #415a77);
     border: none;
     animation: none;
     color: white;
@@ -505,7 +505,7 @@
 
   .social-button.github {
     background: #1e293b;
-    border: 2px solid #3b82f6;
+    border: 2px solid #415a77;
     animation: none;
     color: white;
   }
@@ -518,22 +518,22 @@
   }
 
   .social-button.email {
-    background: linear-gradient(135deg, #ea4335, #d33b2c, #3b82f6);
+    background: linear-gradient(135deg, #ea4335, #d33b2c, #415a77);
     color: white;
   }
 
   .social-button.email:hover {
-    background: linear-gradient(135deg, #d33b2c, #3b82f6, #ea4335);
+    background: linear-gradient(135deg, #d33b2c, #415a77, #ea4335);
     border-color: rgba(59, 130, 246, 0.5);
   }
 
   .social-button.orcid {
-    background: linear-gradient(135deg, #a6ce39, #8bb03c, #3b82f6);
+    background: linear-gradient(135deg, #a6ce39, #8bb03c, #415a77);
     color: white;
   }
 
   .social-button.orcid:hover {
-    background: linear-gradient(135deg, #8bb03c, #3b82f6, #a6ce39);
+    background: linear-gradient(135deg, #8bb03c, #415a77, #a6ce39);
     border-color: rgba(59, 130, 246, 0.5);
   }
 
@@ -627,7 +627,7 @@
   }
 
   .social-button.linkedin {
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    background: linear-gradient(135deg, #415a77, #2563eb);
     border: none;
     animation: none;
     color: white;
@@ -641,7 +641,7 @@
 
   .social-button.github {
     background: #1e293b;
-    border: 2px solid #3b82f6;
+    border: 2px solid #415a77;
     animation: none;
     color: white;
   }
@@ -654,12 +654,12 @@
   }
 
   .social-button.email {
-    background: linear-gradient(135deg, #ea4335, #d33b2c, #3b82f6);
+    background: linear-gradient(135deg, #ea4335, #d33b2c, #415a77);
     color: white;
   }
 
   .social-button.orcid {
-    background: linear-gradient(135deg, #a6ce39, #8bb03c, #3b82f6);
+    background: linear-gradient(135deg, #a6ce39, #8bb03c, #415a77);
     color: white;
   }
 }

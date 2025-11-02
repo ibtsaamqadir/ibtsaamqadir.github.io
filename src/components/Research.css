@@ -31,7 +31,7 @@
 .research .section-title {
   font-size: 2.25rem;
   font-weight: 800;
-  color: #1877f2 !important;
+  color: #415a77 !important;
   margin: 0 0 1rem 0;
   letter-spacing: -0.025em;
 }
@@ -78,7 +78,7 @@
 
 .area-icon {
   font-size: 2.5rem;
-  color: #1877f2;
+  color: #415a77;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@
 .projects-title {
   font-size: 2rem;
   font-weight: 800;
-  color: #1877f2 !important;
+  color: #415a77 !important;
   text-align: center;
   margin: 0 0 3rem 0;
 }
@@ -225,7 +225,7 @@
 .project-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1877f2;
+  color: #415a77;
   margin: 0;
   line-height: 1.4;
 }
@@ -241,7 +241,7 @@
 .project-subtitle {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1877f2;
+  color: #415a77;
   margin: 0;
   line-height: 1.3;
 }
@@ -329,9 +329,9 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: #1877f2;
+  background: #415a77;
   color: #ffffff;
-  border: 1px solid #1877f2;
+  border: 1px solid #415a77;
   border-radius: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -341,10 +341,10 @@
 }
 
 .project-btn:hover {
-  background: rgba(24, 119, 242, 0.25);
-  border-color: rgba(24, 119, 242, 0.5);
+  background: rgba(0, 25, 56, 0.25);
+  border-color: rgba(146, 172, 206, 0.5);
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.3), 0 0 10px rgba(24, 119, 242, 0.2);
+  box-shadow: 0 8px 20px rgba(31, 61, 100, 0.3), 0 0 10px rgba(22, 51, 90, 0.2);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -413,6 +413,8 @@
 
   .section-title {
     font-size: 2.5rem;
+    color: #415a77 !important;
+
   }
 
   .section-subtitle {
@@ -488,6 +490,8 @@
   .section-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #415a77 !important;
+
     text-align: center;
   }
 
@@ -668,6 +672,8 @@
   }
 
   .section-title {
+    color: #415a77 !important;
+
     font-size: 1.75rem;
   }
 

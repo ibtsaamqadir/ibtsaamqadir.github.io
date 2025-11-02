@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logoImage from '../assets/images/logo.svg';
+import logoImage from '../assets/images/logo.png';
 import './Header.css';
 
 const Header: React.FC = () => {

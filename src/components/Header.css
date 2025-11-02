@@ -46,7 +46,7 @@
 .logo-text {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #1877f2;
+  color: #415a77;
   letter-spacing: -0.025em;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .nav-link:hover {
-  color: #1877f2;
+  color: #415a77;
 }
 
 .nav-link::after {
@@ -106,7 +106,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #1877f2;
+  background: #415a77;
   transition: width 0.3s ease;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .nav-link.active {
-  color: #1877f2;
+  color: #415a77;
   font-weight: 600;
   background: none;
   border: none;
@@ -136,7 +136,7 @@
 }
 
 .menu-toggle:hover {
-  color: #1877f2;
+  color: #415a77;
 }
 
 /* Mobile Styles */
