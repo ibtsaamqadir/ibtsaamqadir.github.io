@@ -16,6 +16,17 @@ const Footer: React.FC = () => {
           <div className="footer-info">
             <h3>Muhammad Ibtsaam Qadir</h3>
             <p>Ph.D. Student in Biomedical Engineering</p>
+            <p className="footer-affiliation">
+              <a 
+                href="https://fionakolbinger.github.io/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="affiliation-link"
+              >
+                Translational Medical Image Computing (TMIC) Lab
+              </a>
+            </p>
+            <p className="footer-university">Weldon School of Biomedical Engineering, Purdue University</p>
           </div>
 
           <div className="footer-links">

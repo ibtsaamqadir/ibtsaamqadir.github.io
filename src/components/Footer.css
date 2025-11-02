@@ -46,6 +46,32 @@
   font-size: 0.95rem;
 }
 
+.footer-info p:not(.footer-affiliation):not(.footer-university) {
+  margin-bottom: 0.5rem;
+}
+
+.footer-affiliation {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.footer-university {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.9rem;
+}
+
+.footer-info .affiliation-link {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info .affiliation-link:hover {
+  color: #1877f2;
+  text-decoration: underline;
+}
+
 .footer-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
