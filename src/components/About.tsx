@@ -167,30 +167,6 @@ const About: React.FC = () => {
             </div>
             <span className="award-date">2017-2019, 2019-2023</span>
           </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Dean's List</h4>
-              <p>National University of Sciences and Technology (NUST)</p>
-            </div>
-            <span className="award-date">2020-2023</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Merit Scholarship</h4>
-              <p>NUST School of Electrical Engineering and Computer Science</p>
-            </div>
-            <span className="award-date">2019-2023</span>
-          </div>
-          <div className="award-item">
-            <FaAward className="award-icon" />
-            <div>
-              <h4>Research Excellence Award</h4>
-              <p>NCIL, School of Electrical Engineering and Computer Science, NUST</p>
-            </div>
-            <span className="award-date">2023</span>
-          </div>
         </motion.div>
 
       </div>
