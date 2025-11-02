@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaUniversity, FaAward, FaBriefcase } from 'react-icons/fa';
 import './About.css';
 
 const About: React.FC = () => {
