@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-info">
-            <h3>Muhammad Ibtsaam Qadir            </h3>
+            <h3>Muhammad Ibtsaam Qadir</h3>
             <p>Ph.D. Student in Biomedical Engineering</p>
           </div>
 
@@ -33,10 +33,10 @@ const Footer: React.FC = () => {
             <div className="footer-section">
               <h4>Connect</h4>
               <ul>
-                <li><a href="mailto:ibtisam.ahmed@university.edu">Email</a></li>
-                <li><a href="https://linkedin.com/in/ibtisam-ahmed" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://github.com/ibtisam-ahmed" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://orcid.org/0000-0000-0000-0000" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+                <li><a href="mailto:mqadir@purdue.edu">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/muhammad-ibtsaam-qadir-b530641a0/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/ibtsaamqadir" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://orcid.org/0009-0002-5521-2855" target="_blank" rel="noopener noreferrer">ORCID</a></li>
               </ul>
             </div>
           </div>
