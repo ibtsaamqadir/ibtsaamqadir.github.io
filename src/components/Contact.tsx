@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub, FaUniversity, FaPaperPlane, FaIdCard } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa';
+import orcidImage from '../assets/images/ORCID.png';
 import './Contact.css';
 
 interface ContactInfo {
@@ -66,14 +67,7 @@ const Contact: React.FC = () => {
       color: '#3b82f6'
     },
     {
-      icon: <FaUniversity />,
-      title: 'University',
-      value: contactInfo.university,
-      link: '#',
-      color: '#8b5cf6'
-    },
-    {
-      icon: <FaIdCard />,
+      icon: <img src={orcidImage} alt="ORCID" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />,
       title: 'ORCID iD',
       value: contactInfo.orcid,
       link: `https://orcid.org/${contactInfo.orcid}`,
