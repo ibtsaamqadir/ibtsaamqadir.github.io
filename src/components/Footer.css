@@ -53,12 +53,13 @@
 .footer-affiliation {
   margin-top: 0.5rem !important;
   margin-bottom: 0.25rem !important;
+  font-size: 0.85rem;
 }
 
 .footer-university {
   margin-top: 0.25rem !important;
   margin-bottom: 0 !important;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .footer-info .affiliation-link {
