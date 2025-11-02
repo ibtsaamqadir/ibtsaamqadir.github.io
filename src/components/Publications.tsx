@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaFileAlt, FaExternalLinkAlt, FaCalendarAlt, FaUsers, FaFilter } from 'react-icons/fa';
+import { FaFileAlt, FaExternalLinkAlt, FaCalendarAlt, FaFilter } from 'react-icons/fa';
 import './Publications.css';
 
 interface Publication {
@@ -262,7 +262,6 @@ const Publications: React.FC = () => {
                   </div>
                   <h3 className="publication-title">{publication.title}</h3>
                   <div className="publication-authors">
-                    <FaUsers className="authors-icon" />
                     <span>
                       {publication.authors.map((author, index) => (
                         <React.Fragment key={index}>
@@ -347,7 +346,6 @@ const Publications: React.FC = () => {
                   </div>
                   <h3 className="publication-title">{publication.title}</h3>
                   <div className="publication-authors">
-                    <FaUsers className="authors-icon" />
                     <span>
                       {publication.authors.map((author, index) => (
                         <React.Fragment key={index}>
