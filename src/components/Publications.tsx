@@ -146,72 +146,60 @@ const Publications: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Research Articles Section */}
-        <motion.h3
-          className="research-articles-heading"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          Research Articles
-        </motion.h3>
+     {/* Research Articles Section */}
+<motion.h3
+  className="research-articles-heading"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+>
+  Research Articles
+</motion.h3>
 
-        <div className="publications-list">
-          {filteredResearchArticles.map((publication, index) => (
-            <motion.div
-              key={publication.id}
-              className="publication-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
+<div className="publications-list">
+  {filteredResearchArticles.map((publication, index) => (
+    <motion.div
+      key={publication.id}
+      className="publication-card"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      viewport={{ once: true }}
+    >
+      <div className="publication-header">
+        <div className="publication-info">
+          <div className="publication-meta">
+            <span className="publication-year">
+              <FaCalendarAlt className="meta-icon" />
+              {publication.year}
+            </span>
+            <span
+              className={`journal-badge ${getJournalBadgeColor(publication.journal)}`}
             >
-              <div className="publication-header">
-                <div className="publication-info">
-                  <div className="publication-meta">
-                    <span className="publication-year">
-                      <FaCalendarAlt className="meta-icon" />
-                      {publication.year}
-                    </span>
-                    <span className={`journal-badge ${getJournalBadgeColor(publication.journal)}`}>
-                      {publication.journal}
-                    </span>
-                  </div>
-                  <h3 className="publication-title">{publication.title}</h3>
-                  <div className="publication-authors">
-                    <span>
-                      {publication.authors.map((author, index) => (
-                        <React.Fragment key={index}>
-                          {author === 'Qadir, M. I.' ? (
-                            <span className="highlighted-author">{author}</span>
-                          ) : (
-                            author
-                          )}
-                          {index < publication.authors.length - 1 && ', '}
-                        </React.Fragment>
-                      ))}
-                    </span>
-                  </div>
-                </div>
-                <div className="publication-actions">
-                  {publication.link && (
-                    <a
-                      href={publication.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="publication-link"
-                      title="View publication"
-                    >
-                      <FaExternalLinkAlt />
-                    </a>
-                  )}
-                </div>
-              </div>
+              {publication.journal}
+            </span>
+          </div>
 
+          <h3 className="publication-title">{publication.title}</h3>
+
+          <div className="publication-authors">
+            <span>
+              {publication.authors.map((author, index) => (
+                <React.Fragment key={index}>
+                  {author === 'Qadir, M. I.' ? (
+                    <span className="highlighted-author">{author}</span>
+                  ) : (
+                    author
+                  )}
+                  {index < publication.authors.length - 1 && ', '}
+                </React.Fragment>
+              ))}
+
+              {/* DOI inline after authors */}
               {publication.doi && (
-                <div className="publication-doi">
-                  <span>DOI: </span>
+                <>
+                  , <span className="doi-label">DOI:</span>{' '}
                   <a
                     href={`https://doi.org/${publication.doi}`}
                     target="_blank"
@@ -220,179 +208,212 @@ const Publications: React.FC = () => {
                   >
                     {publication.doi}
                   </a>
-                </div>
+                </>
               )}
-            </motion.div>
-          ))}
+            </span>
+          </div>
         </div>
 
-        {/* Review & Comment Articles Section */}
-        {filteredReviewArticles.length > 0 && (
-          <>
-            <motion.h3
-              className="research-articles-heading"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
+        <div className="publication-actions">
+          {publication.link && (
+            <a
+              href={publication.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="publication-link"
+              title="View publication"
             >
-              Review & Comment Articles
-            </motion.h3>
+              <FaExternalLinkAlt />
+            </a>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  ))}
+</div>
 
-            <div className="publications-list">
-              {filteredReviewArticles.map((publication, index) => (
-            <motion.div
-              key={publication.id}
-              className="publication-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="publication-header">
-                <div className="publication-info">
-                  <div className="publication-meta">
-                    <span className="publication-year">
-                      <FaCalendarAlt className="meta-icon" />
-                      {publication.year}
-                    </span>
-                    <span className={`journal-badge ${getJournalBadgeColor(publication.journal)}`}>
-                      {publication.journal}
-                    </span>
-                  </div>
-                  <h3 className="publication-title">{publication.title}</h3>
-                  <div className="publication-authors">
-                    <span>
-                      {publication.authors.map((author, index) => (
-                        <React.Fragment key={index}>
-                          {author === 'Qadir, M. I.' ? (
-                            <span className="highlighted-author">{author}</span>
-                          ) : (
-                            author
-                          )}
-                          {index < publication.authors.length - 1 && ', '}
-                        </React.Fragment>
-                      ))}
-                    </span>
-                  </div>
-                </div>
-                <div className="publication-actions">
-                  {publication.link && (
-                    <a
-                      href={publication.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="publication-link"
-                      title="View publication"
-                    >
-                      <FaExternalLinkAlt />
-                    </a>
-                  )}
-                </div>
+
+       {/* Review & Comment Articles Section */}
+{filteredReviewArticles.length > 0 && (
+  <>
+    <motion.h3
+      className="research-articles-heading"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      viewport={{ once: true }}
+    >
+      Review & Comment Articles
+    </motion.h3>
+
+    <div className="publications-list">
+      {filteredReviewArticles.map((publication, index) => (
+        <motion.div
+          key={publication.id}
+          className="publication-card"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          viewport={{ once: true }}
+        >
+          <div className="publication-header">
+            <div className="publication-info">
+              <div className="publication-meta">
+                <span className="publication-year">
+                  <FaCalendarAlt className="meta-icon" />
+                  {publication.year}
+                </span>
+                <span
+                  className={`journal-badge ${getJournalBadgeColor(publication.journal)}`}
+                >
+                  {publication.journal}
+                </span>
               </div>
 
-              {publication.doi && (
-                <div className="publication-doi">
-                  <span>DOI: </span>
-                  <a
-                    href={`https://doi.org/${publication.doi}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="doi-link"
-                  >
-                    {publication.doi}
-                  </a>
-                </div>
-              )}
-            </motion.div>
-          ))}
-            </div>
-          </>
-        )}
+              <h3 className="publication-title">{publication.title}</h3>
 
-        {/* Conference Abstracts Section */}
-        {filteredConferenceAbstracts.length > 0 && (
-          <>
-            <motion.h3
-              className="research-articles-heading"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              Conference Abstracts
-            </motion.h3>
+              <div className="publication-authors">
+                <span>
+                  {publication.authors.map((author, index) => (
+                    <React.Fragment key={index}>
+                      {author === 'Qadir, M. I.' ? (
+                        <span className="highlighted-author">{author}</span>
+                      ) : (
+                        author
+                      )}
+                      {index < publication.authors.length - 1 && ', '}
+                    </React.Fragment>
+                  ))}
 
-            <div className="publications-list">
-              {filteredConferenceAbstracts.map((publication, index) => (
-            <motion.div
-              key={publication.id}
-              className="publication-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="publication-header">
-                <div className="publication-info">
-                  <div className="publication-meta">
-                    <span className="publication-year">
-                      <FaCalendarAlt className="meta-icon" />
-                      {publication.year}
-                    </span>
-                    <span className={`journal-badge ${getJournalBadgeColor(publication.journal)}`}>
-                      {publication.journal}
-                    </span>
-                  </div>
-                  <h3 className="publication-title">{publication.title}</h3>
-                  <div className="publication-authors">
-                    <span>
-                      {publication.authors.map((author, index) => (
-                        <React.Fragment key={index}>
-                          {author === 'Qadir, M. I.' ? (
-                            <span className="highlighted-author">{author}</span>
-                          ) : (
-                            author
-                          )}
-                          {index < publication.authors.length - 1 && ', '}
-                        </React.Fragment>
-                      ))}
-                    </span>
-                  </div>
-                </div>
-                <div className="publication-actions">
-                  {publication.link && (
-                    <a
-                      href={publication.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="publication-link"
-                      title="View publication"
-                    >
-                      <FaExternalLinkAlt />
-                    </a>
+                  {/* DOI inline after authors */}
+                  {publication.doi && (
+                    <>
+                      , <span className="doi-label">DOI:</span>{' '}
+                      <a
+                        href={`https://doi.org/${publication.doi}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="doi-link"
+                      >
+                        {publication.doi}
+                      </a>
+                    </>
                   )}
-                </div>
+                </span>
+              </div>
+            </div>
+
+            <div className="publication-actions">
+              {publication.link && (
+                <a
+                  href={publication.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="publication-link"
+                  title="View publication"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+              )}
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </>
+)}
+
+
+     {/* Conference Abstracts Section */}
+{filteredConferenceAbstracts.length > 0 && (
+  <>
+    <motion.h3
+      className="research-articles-heading"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      viewport={{ once: true }}
+    >
+      Conference Abstracts
+    </motion.h3>
+
+    <div className="publications-list">
+      {filteredConferenceAbstracts.map((publication, index) => (
+        <motion.div
+          key={publication.id}
+          className="publication-card"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: index * 0.1 }}
+          viewport={{ once: true }}
+        >
+          <div className="publication-header">
+            <div className="publication-info">
+              <div className="publication-meta">
+                <span className="publication-year">
+                  <FaCalendarAlt className="meta-icon" />
+                  {publication.year}
+                </span>
+                <span
+                  className={`journal-badge ${getJournalBadgeColor(publication.journal)}`}
+                >
+                  {publication.journal}
+                </span>
               </div>
 
-              {publication.doi && (
-                <div className="publication-doi">
-                  <span>DOI: </span>
-                  <a
-                    href={`https://doi.org/${publication.doi}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="doi-link"
-                  >
-                    {publication.doi}
-                  </a>
-                </div>
-              )}
-            </motion.div>
-          ))}
+              <h3 className="publication-title">{publication.title}</h3>
+
+              <div className="publication-authors">
+                <span>
+                  {publication.authors.map((author, index) => (
+                    <React.Fragment key={index}>
+                      {author === 'Qadir, M. I.' ? (
+                        <span className="highlighted-author">{author}</span>
+                      ) : (
+                        author
+                      )}
+                      {index < publication.authors.length - 1 && ', '}
+                    </React.Fragment>
+                  ))}
+
+                  {/* DOI inline after authors */}
+                  {publication.doi && (
+                    <>
+                      , <span className="doi-label">DOI:</span>{' '}
+                      <a
+                        href={`https://doi.org/${publication.doi}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="doi-link"
+                      >
+                        {publication.doi}
+                      </a>
+                    </>
+                  )}
+                </span>
+              </div>
             </div>
-          </>
-        )}
+
+            <div className="publication-actions">
+              {publication.link && (
+                <a
+                  href={publication.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="publication-link"
+                  title="View publication"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+              )}
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </>
+)}
+
 
         {(filteredResearchArticles.length === 0 && filteredReviewArticles.length === 0 && filteredConferenceAbstracts.length === 0) && (
           <motion.div
