@@ -16,7 +16,6 @@ const Footer: React.FC = () => {
           <div className="footer-info">
             <h3>Muhammad Ibtsaam Qadir            </h3>
             <p>Ph.D. Student in Biomedical Engineering</p>
-            <p>Passionate about advancing knowledge through innovative research</p>
           </div>
 
           <div className="footer-links">
@@ -28,16 +27,6 @@ const Footer: React.FC = () => {
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h4>Research Areas</h4>
-              <ul>
-                <li>Artificial Intelligence for Medicine</li>
-                <li>Deep Learning Based Medical Image Analysis</li>
-                <li>Multimodal Artificial Intelligence</li>
-                <li>Translational Clinical Research</li>
               </ul>
             </div>
 
