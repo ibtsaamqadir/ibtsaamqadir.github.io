@@ -80,7 +80,7 @@ section { padding: 72px 0; scroll-margin-top: var(--nav-h); }
 }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 600; font-size: 16px; }
 .brand:hover { color: var(--text); text-decoration: none; }
-.brand img { height: 30px; width: auto; border-radius: 20px; }
+.brand img { height: 30px; width: auto; border-radius: 8px; }
 
 .site-nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
 .site-nav::-webkit-scrollbar { display: none; }
