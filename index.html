@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Ibtsaam Qadir | Clinical AI for Pancreatic Disease</title>
+<meta name="description" content="PhD candidate in Biomedical Engineering at Purdue University, building multimodal AI for pancreatic disease management, surgical data science and regulatory science.">
+<meta property="og:title" content="Muhammad Ibtsaam Qadir | Clinical AI for Pancreatic Disease">
+<meta property="og:description" content="PhD candidate at Purdue BME. Multimodal AI for pancreatic disease, surgical data science, regulatory science and theoretical machine learning.">
+<meta property="og:url" content="https://ibtsaamqadir.github.io/">
+<meta name="theme-color" content="#0B2B33">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============================ NAV ============================ -->
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <!-- Put your logo at assets/img/logo.png. If it's missing, only the name shows. -->
+      <img src="assets/img/logo.png" alt="" onerror="this.remove()">
+      <span>Muhammad Ibtsaam Qadir</span>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <!-- Put your photo at assets/img/portrait.jpg. If it's missing, the circle disappears. -->
+      <img class="avatar" src="assets/img/portrait.jpg" alt="Muhammad Ibtsaam Qadir"
+           onerror="this.remove()">
+
+      <div>
+        <h1>Muhammad Ibtsaam Qadir</h1>
+        <p class="role">PhD Candidate in Biomedical Engineering &middot; Purdue University</p>
+        <p class="bio">I build multimodal machine learning for pancreatic disease &mdash; models that read imaging, laboratory values and clinical context together, so that patients go to the operating room when the operation will actually help.</p>
+
+        <div class="hero-links">
+          <!-- EDIT: your real Purdue address -->
+          <a class="primary" href="mailto:your.email@purdue.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=pv1eYiAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/0009-0002-5521-2855" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://github.com/ibtsaamqadir" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhammad-ibtsaam-qadir-b530641a0" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- Put your PDF at assets/cv.pdf, or delete this link -->
+          <a href="assets/cv.pdf">CV</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section id="about">
+  <div class="wrap">
+    <p class="label">About</p>
+    <h2 class="section-title">Making the decision to operate more precise</h2>
+
+    <div class="measure">
+      <p>Pancreatic cysts are found incidentally in a large share of abdominal scans. A few will become invasive cancer; most never will. The Fukuoka and Kyoto consensus guidelines resolve that uncertainty using imaging features, cytology and markers such as CA19-9 &mdash; sensitively, but with poor specificity, so a substantial number of patients undergo a pancreatectomy that carries real morbidity and, for them, no benefit.</p>
+
+      <p>I develop models that read the modalities jointly rather than in sequence, trained to predict high-grade dysplasia and invasive disease, and to anticipate who recovers well after surgery. I work in the <a href="https://fionakolbinger.github.io/" target="_blank" rel="noopener">Kolbinger Lab</a> at the <a href="https://engineering.purdue.edu/BME" target="_blank" rel="noopener">Weldon School of Biomedical Engineering</a>, alongside the Division of Surgical Oncology at Indiana University School of Medicine.</p>
+
+      <p>Around that clinical core I work on the conditions under which such a model can be trusted: whether it survives a change of scanner, whether a vision-language model can be talked out of the right answer by text embedded in a surgical video, and what evidence a regulator should require before any of it reaches a patient.</p>
+    </div>
+
+    <h3 style="font-size:20px;margin:44px 0 22px">Education</h3>
+    <ul class="edu">
+      <li>
+        <p class="when">2024 &ndash; Present</p>
+        <h4>PhD, Biomedical Engineering</h4>
+        <p class="where">Purdue University, Weldon School of Biomedical Engineering &middot; West Lafayette, IN</p>
+      </li>
+      <li>
+        <p class="when">2019 &ndash; 2023</p>
+        <h4>BE, Electrical Engineering</h4>
+        <p class="where">National University of Sciences and Technology (SEECS) &middot; Islamabad, Pakistan</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ RESEARCH ============================ -->
+<section id="research" class="tinted">
+  <div class="wrap">
+    <p class="label">Research</p>
+    <h2 class="section-title">Four themes, one translational problem</h2>
+    <p class="measure" style="margin-bottom:34px;color:var(--muted)">A model that stratifies pancreatic cyst risk is only useful if it holds up on another hospital's scanner, if a surgeon can trust what it shows during an operation, and if a regulator can be shown why it belongs near a patient.</p>
+
+    <div class="cards">
+
+      <article class="card">
+        <h3>Pancreatic Disease Management</h3>
+        <p>Multimodal risk stratification for intraductal papillary mucinous neoplasms and pancreatic cancer &mdash; predicting malignant progression from imaging, labs and clinical variables, and predicting textbook outcome after pancreatectomy.</p>
+        <div class="tags"><span>IPMN</span><span>Multimodal AI</span><span>Risk stratification</span><span>MRI &amp; CT</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Surgical Data Science</h3>
+        <p>Video understanding for minimally invasive surgery, vision-language models for intraoperative decision support, and the adversarial failure modes that come with putting a language interface into an operating room.</p>
+        <div class="tags"><span>Laparoscopic video</span><span>VLMs</span><span>Prompt injection</span><span>Robustness</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Regulatory Science</h3>
+        <p>What it should take to approve a medical AI device: study requirements across jurisdictions, and the gap between a better discrimination metric and a better patient outcome.</p>
+        <div class="tags"><span>EU MDR</span><span>SaMD</span><span>Clinical utility</span><span>Evidence standards</span></div>
+      </article>
+
+      <article class="card">
+        <h3>Theoretical Machine Learning</h3>
+        <p>Where learned systems break &mdash; the fundamental limits that bound large language models regardless of scale, and generalisation under distribution shift across scanners, sites and time.</p>
+        <div class="tags"><span>Scaling limits</span><span>Distribution shift</span><span>Continual learning</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ NEWS ============================ -->
+<section id="news">
+  <div class="wrap">
+    <p class="label">News</p>
+    <h2 class="section-title">Recent highlights</h2>
+
+    <!-- Add newest at the top. Delete the <a> if an item has no link yet. -->
+    <ul class="news">
+      <li>
+        <p class="when">Jul 2026</p>
+        <div>
+          <h4>Comment out in <em>Nature Biomedical Engineering</em></h4>
+          <p>On the fragmentation of early-stage medical device study requirements across the EU, and what reform would look like. <a href="#publications">Read more</a></p>
+        </div>
+      </li>
+      <li>
+        <p class="when">Jul 2026</p>
+        <div>
+          <h4>Prompt injection paper published in <em>npj Digital Surgery</em></h4>
+          <p>Vision-language models for surgical decision support can be steered by text and images placed in the operative field. <a href="#publications">Read more</a></p>
+        </div>
+      </li>
+      <li>
+        <p class="when">Jan 2026</p>
+        <div>
+          <h4>Two abstracts presented at AHPBA</h4>
+          <p>Multimodal prediction of textbook outcome after distal pancreatectomy and after pancreatoduodenectomy.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">Jul 2025</p>
+        <div>
+          <h4>Systematic review in <em>PLOS Digital Health</em></h4>
+          <p>The state of artificial intelligence in IPMN imaging, across the full published literature. <a href="https://doi.org/10.1371/journal.pdig.0000920" target="_blank" rel="noopener">Read the paper</a></p>
+        </div>
+      </li>
+      <li>
+        <p class="when">Jun 2025</p>
+        <div>
+          <h4>Abstract presented at ASCO</h4>
+          <p>Towards personalised management of IPMN with multimodal artificial intelligence.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ PUBLICATIONS ============================ -->
+<section id="publications" class="tinted">
+  <div class="wrap">
+    <p class="label">Publications</p>
+    <h2 class="section-title">Publications &amp; honours</h2>
+    <p class="measure" style="margin-bottom:34px;color:var(--muted)">Live citation counts on <a href="https://scholar.google.com/citations?user=pv1eYiAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>. Author identifiers on <a href="https://orcid.org/0009-0002-5521-2855" target="_blank" rel="noopener">ORCID</a>.</p>
+
+    <p class="subhead">Journal articles</p>
+    <ul class="pubs">
+      <li>
+        <span class="title">EU's fragmented early-stage medical device study requirements need reform.</span>
+        <span class="authors"><b>Qadir MI</b>, Wober J, McDonnell A, et al., Melvin T, Kolbinger FR.</span>
+        <span class="venue">Nature Biomedical Engineering</span>, 2026.
+      </li>
+      <li>
+        <span class="title">Prompt injection attacks on vision-language models for surgical decision support.</span>
+        <span class="authors">Zhang Z, <b>Qadir MI</b>, Carstens M, et al., Kolbinger FR.</span>
+        <span class="venue">npj Digital Surgery</span>, 2026.
+      </li>
+      <li>
+        <span class="title">Artificial intelligence in pancreatic intraductal papillary mucinous neoplasm imaging: a systematic review.</span>
+        <span class="authors"><b>Qadir MI</b>, Baril JA, Yip-Schneider MT, Schonlau D, Tran TTT, Schmidt CM, Kolbinger FR.</span>
+        <span class="venue">PLOS Digital Health</span>, 2025.
+        <a class="view" href="https://doi.org/10.1371/journal.pdig.0000920" target="_blank" rel="noopener">[View]</a>
+      </li>
+      <li>
+        <span class="title">From marginal gains to clinical utility: machine learning-based percutaneous coronary intervention risk prediction models.</span>
+        <span class="authors"><b>Qadir MI</b>, Hira RS, Kolbinger FR.</span>
+        <span class="venue">European Heart Journal &mdash; Digital Health</span>, 2025.
+      </li>
+      <li>
+        <span class="title">Unmanned surface vehicle for intelligent water quality assessment to promote sustainable human health.</span>
+        <span class="authors"><b>Qadir MI</b>, Mumtaz R, Manzoor M, et al., Charlesworth S.</span>
+        <span class="venue">Water Supply</span>, 2024.
+      </li>
+    </ul>
+
+    <p class="subhead">Preprints</p>
+    <ul class="pubs">
+      <li>
+        <span class="title">Field strength-dependent performance variability in deep learning-based analysis of magnetic resonance imaging.</span>
+        <span class="authors"><b>Qadir MI</b>, Schonlau D, Dydak U, Kolbinger FR.</span> 2025.
+      </li>
+      <li>
+        <span class="title">On the fundamental limits of LLMs at scale.</span>
+        <span class="authors">Mohsin MA, Umer M, Bilal A, et al., Cioffi JM.</span> 2025.
+      </li>
+      <li>
+        <span class="title">Channel prediction under network distribution shift using continual learning-based loss regularization.</span>
+        <span class="authors">Mohsin MA, Umer M, Bilal A, et al., Cioffi JM.</span> 2025.
+      </li>
+      <li>
+        <span class="title">Prompt injection attacks on vision-language models for surgical decision support.</span>
+        <span class="authors">Zhang Z, <b>Qadir MI</b>, Carstens M, et al., Kolbinger FR.</span>
+        <span class="venue">medRxiv</span>, 2025.
+      </li>
+      <li>
+        <span class="title">Artificial intelligence in pancreatic intraductal papillary mucinous neoplasm imaging: a systematic review.</span>
+        <span class="authors"><b>Qadir MI</b>, Baril JA, Yip-Schneider MT, et al., Kolbinger FR.</span>
+        <span class="venue">medRxiv</span>, 2025.
+        <a class="view" href="https://doi.org/10.1101/2025.01.08.25320130" target="_blank" rel="noopener">[View]</a>
+      </li>
+    </ul>
+
+    <p class="subhead">Conference papers &amp; abstracts</p>
+    <ul class="pubs">
+      <li>
+        <span class="title">Prediction of textbook outcome after distal pancreatectomy using a multimodal artificial intelligence model.</span>
+        <span class="authors"><b>Qadir MI</b>, Hughes A, Kiss S, et al., Kolbinger FR.</span>
+        <span class="venue">HPB</span>, 2026. Americas Hepato-Pancreato-Biliary Association.
+      </li>
+      <li>
+        <span class="title">Artificial intelligence models for prediction of textbook outcome after pancreatoduodenectomy.</span>
+        <span class="authors">Hughes A, <b>Qadir MI</b>, Kiss S, et al., Ellis R.</span>
+        <span class="venue">HPB</span>, 2026. Americas Hepato-Pancreato-Biliary Association.
+      </li>
+      <li>
+        <span class="title">Channel prediction under network distribution shift using continual learning-based loss regularization.</span>
+        <span class="authors">Mohsin MA, Umer M, Bilal A, et al., Cioffi JM.</span> 2026.
+      </li>
+      <li>
+        <span class="title">Towards personalized management of intraductal papillary mucinous neoplasms with multimodal artificial intelligence.</span>
+        <span class="authors"><b>Qadir MI</b>, Baril JA, Schonlau D, et al., Kolbinger FR.</span>
+        <span class="venue">Journal of Clinical Oncology</span> 43(16_suppl):e16461, 2025. ASCO Annual Meeting.
+      </li>
+    </ul>
+
+    <p class="subhead">Awards &amp; honours</p>
+    <!-- REPLACE THESE. I could not verify your awards from public sources; these
+         three entries only demonstrate the format. -->
+    <ul class="edu" style="margin-top:6px">
+      <li>
+        <p class="when">2025</p>
+        <h4>Award name</h4>
+        <p class="where">Awarding body</p>
+      </li>
+      <li>
+        <p class="when">2024</p>
+        <h4>Fellowship or travel grant</h4>
+        <p class="where">Awarding body</p>
+      </li>
+      <li>
+        <p class="when">2023</p>
+        <h4>Undergraduate distinction</h4>
+        <p class="where">National University of Sciences and Technology</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section id="contact">
+  <div class="wrap">
+    <p class="label">Contact</p>
+    <h2 class="section-title">Get in touch</h2>
+
+    <div class="contact-grid">
+      <div>
+        <p>I am glad to hear from clinicians with a pancreatic dataset that deserves a better model, from engineers working on the same robustness problems, and from students at Purdue looking for a project in clinical AI.</p>
+        <p>Email is the reliable channel. If you are writing about a collaboration, a sentence on the data and the decision you want to improve will get a much faster answer than a general enquiry.</p>
+      </div>
+
+      <div>
+        <p>
+          <strong>Muhammad Ibtsaam Qadir</strong><br>
+          Weldon School of Biomedical Engineering<br>
+          Purdue University<br>
+          206 S. Martin Jischke Drive<br>
+          West Lafayette, IN 47907, United States
+        </p>
+        <p><a href="mailto:your.email@purdue.edu">your.email@purdue.edu</a></p>
+        <p><a href="https://fionakolbinger.github.io/" target="_blank" rel="noopener">Kolbinger Lab &mdash; AI in Surgery and Interventional Medicine</a></p>
+        <p class="linkrow">
+          <a href="https://scholar.google.com/citations?user=pv1eYiAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/0009-0002-5521-2855" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://www.researchgate.net/profile/Muhammad-Ibtsaam-Qadir" target="_blank" rel="noopener">ResearchGate</a>
+          <a href="https://github.com/ibtsaamqadir" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhammad-ibtsaam-qadir-b530641a0" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>&copy; 2026 Muhammad Ibtsaam Qadir</span>
+    <span>Weldon School of Biomedical Engineering, Purdue University</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
